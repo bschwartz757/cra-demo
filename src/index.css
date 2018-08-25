@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto);
+
+/*****************************************************
+*   General Styling
+******************************************************/
+
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* .navbar {
+    background-color: #4f81bd;
+}
+
+.navbar-nav li :hover {
+    color: #4f81bd;
+    background-color: white;
+    border-bottom: 3px solid #92fff3;
+}
+
+.navbar-collapse {
+    background-color: #4f81bd;
+}
+
+.navbar-toggler {
+    color: white !important;
+}
+
+.navbar-toggler:hover {
+    color: #4f81bd !important;
+    background-color: white;
+}
+
+.nav-link {
+    font-size: 20px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    top: 0px;
+}
+
+/*****************************************************
+*   Buttons, optionally create and use your own
+******************************************************/
+
+/*.btn-blue {
+    color: white;
+    border: 1px white solid;
+    background: #4F81BD;
+    border-radius: 10px;
+}
+
+.bounce-white {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.bounce-white:before {
+    background: white;
+    border: 1px solid #4F81BD;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.bounce-white:hover {
+    color: black !important;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.bounce-white:hover::before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+} */
