@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import { Container, Col } from 'reactstrap';
 
 class Main extends Component {
-  state = {
-
-  };
+  state = {};
 
   render() {
     return (
@@ -23,8 +21,8 @@ class Main extends Component {
               width: '25%'
             }}
           >
+            <h1>Hello!</h1>
           </div>
-
         </Col>
         <Col
           xs="12"
@@ -35,9 +33,8 @@ class Main extends Component {
             top: '5rem',
             zIndex: 1020
           }}
-        >
-        </Col>
-	  </Container>
+        />
+      </Container>
     );
   }
 }
