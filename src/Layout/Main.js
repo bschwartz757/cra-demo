@@ -23,7 +23,6 @@ class Main extends Component {
               width: '25%'
             }}
           >
-			<h1>Hello!</h1>
           </div>
 
         </Col>
