@@ -27,12 +27,10 @@ library.add(fas, fab);
 //   document.getElementById('root')
 // );
 
-
-
 render(
-      <div>
-        <App />
-      </div>,
+  <div>
+    <App />
+  </div>,
   document.getElementById('root')
 );
 registerServiceWorker();

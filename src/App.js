@@ -8,10 +8,10 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-		<NavComponent />
-		<main>
-			<Main />
-		</main>
+        <NavComponent />
+        <main>
+          <Main />
+        </main>
       </React.Fragment>
     );
   }
