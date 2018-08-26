@@ -11,7 +11,7 @@ const TableComponent = props => {
 
   return (
     <CardComponent title={props.title}>
-      <Table responsive>
+      <Table responsive hover>
         <TableHead columns={props.columns} />
         <TableBody data={props.data} />
       </Table>
