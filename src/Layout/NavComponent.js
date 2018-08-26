@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -35,7 +36,7 @@ class Navigation extends Component {
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="#">
+              <NavLink tag={Link} to="/">
                 <FontAwesomeIcon
                   icon={['fas', 'home']}
                   size="lg"
@@ -45,7 +46,7 @@ class Navigation extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">
+              <NavLink tag={Link} to="/about">
                 <FontAwesomeIcon
                   icon={['fas', 'user-tie']}
                   size="lg"
@@ -55,7 +56,7 @@ class Navigation extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">
+              <NavLink tag={Link} to="/data">
                 <FontAwesomeIcon
                   icon={['fas', 'database']}
                   size="lg"
@@ -65,7 +66,7 @@ class Navigation extends Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">
+              <NavLink tag={Link} to="/test">
                 <FontAwesomeIcon
                   icon={['fas', 'vial']}
                   size="lg"
