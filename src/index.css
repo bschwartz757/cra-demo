@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:400);
 
 /*****************************************************
 *   General Styling
@@ -9,11 +9,24 @@ body {
   margin: auto;
 }
 
-/* .navbar {
-    background-color: #4f81bd;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-nav li :hover {
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*.navbar-nav li :hover {
     color: #4f81bd;
     background-color: white;
     border-bottom: 3px solid #92fff3;

@@ -31,48 +31,48 @@ class Navigation extends Component {
   render() {
     return (
       <Navbar color="dark" dark fixed="top" expand="md">
-        <NavbarBrand href="/">Logo Here</NavbarBrand>
+        <NavbarBrand href="/">LOGO HERE</NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            <NavItem className="mr-2">
               <NavLink tag={Link} to="/">
                 <FontAwesomeIcon
                   icon={['fas', 'home']}
                   size="lg"
                   className="mr-2"
                 />
-                Home
+                HOME
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="mr-2">
               <NavLink tag={Link} to="/about">
                 <FontAwesomeIcon
                   icon={['fas', 'user-tie']}
                   size="lg"
                   className="mr-2"
                 />
-                About
+                ABOUT
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="mr-2">
               <NavLink tag={Link} to="/data">
                 <FontAwesomeIcon
                   icon={['fas', 'database']}
                   size="lg"
                   className="mr-2"
                 />
-                Data
+                DATA
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="mr-2">
               <NavLink tag={Link} to="/test">
                 <FontAwesomeIcon
                   icon={['fas', 'vial']}
                   size="lg"
                   className="mr-2"
                 />
-                Test
+                TEST
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
@@ -82,7 +82,7 @@ class Navigation extends Component {
                   size="lg"
                   className="mr-2"
                 />
-                Dropdown Menu
+                DROPDOWN MENU
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Option 1</DropdownItem>
