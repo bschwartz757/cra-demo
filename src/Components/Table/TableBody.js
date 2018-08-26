@@ -1,26 +1,15 @@
 import React from 'react';
 
-const TableBody = props => (
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-);
+const TableBody = props => {
+  const rowData = props.data.map((row, i) => {
+    const tableCells = Object.keys(row).map((key, index) => {
+      return <td key={index}>{row[key]}</td>;
+    });
+
+    return <tr key={i}>{tableCells}</tr>;
+  });
+
+  return <tbody>{rowData}</tbody>;
+};
 
 export default TableBody;

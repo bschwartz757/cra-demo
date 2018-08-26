@@ -3,14 +3,64 @@
  *****************************************************/
 // Data for DataPage
 const data1 = {
-  DOCUMENTATION_DATA: {
-    month: '[1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12]',
-    score: '[50, 53, 63, 63, 72, 74, 75, 81, 80, 95, 98, 93]'
-  }
+  title: 'DOCUMENTATION_DATA',
+  columns: ['month', 'year'],
+  data: [
+    {
+      month: '1',
+      score: '50'
+    },
+    {
+      month: '2',
+      score: '53'
+    },
+    {
+      month: '3',
+      score: '63'
+    },
+    {
+      month: '4',
+      score: '63'
+    },
+    {
+      month: '5',
+      score: '72'
+    },
+    {
+      month: '6',
+      score: '74'
+    },
+    {
+      month: '7',
+      score: '75'
+    },
+    {
+      month: '8',
+      score: '81'
+    },
+    {
+      month: '9',
+      score: '80'
+    },
+    {
+      month: '10',
+      score: '95'
+    },
+    {
+      month: '11',
+      score: '98'
+    },
+    {
+      month: '12',
+      score: '93'
+    }
+  ]
 };
 
 const data2 = {
-  CONDITION_DATA: [
+  title: 'CONDITION_DATA',
+  columns: ['CONDITION_NAME', 'HISTORIC', 'CURRENT', 'CHANGE', 'CHANGE_ERROR'],
+  data: [
     {
       CONDITION_NAME: 'Acute blood loss anemia',
       HISTORIC: '5',

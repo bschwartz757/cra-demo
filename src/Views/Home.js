@@ -4,7 +4,7 @@ import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
 import Photo from '../assets/images/Me-In-Sicily-bw.jpg';
 
-const Home = props => (
+const HomePage = props => (
   <section>
     <Row>
       <Col xs="12">
@@ -48,4 +48,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(Home);
+)(HomePage);

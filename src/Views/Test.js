@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Test = () => (
+const TestPage = () => (
   <div>
     <h1>Test Page</h1>
     <p>Did you get here via Redux?</p>
   </div>
 );
 
-export default Test;
+export default TestPage;
