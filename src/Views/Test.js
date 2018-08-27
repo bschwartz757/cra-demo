@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Row, Col } from 'reactstrap';
 
 import { test1 } from '../data';
@@ -32,4 +33,24 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+const mapStateToProps = state => {
+  return {
+    tests: state.updateTestAnswer.tests
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    updateTestAnswer: value => {
+      dispatch({
+        type: 'UPDATE_TEST_ANSWER',
+        value: value
+      });
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(TestPage);
