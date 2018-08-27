@@ -6,9 +6,6 @@ import TableComponent from '../Components/Table';
 import { data1, data2 } from '../data';
 
 const DataPage = () => {
-  // console.log('data1: ', data1)
-  // console.log('data2: ', data2)
-
   return (
     <React.Fragment>
       <section>

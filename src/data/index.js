@@ -80,21 +80,24 @@ const data2 = {
 
 // Test Questions for TestPage
 const test1 = {
-  question1: {
-    questions: ['Which letter is A?'],
-    options: [['A', 'B', 'C', 'D']],
-    answer: ['A']
-  },
-  question2: {
-    questions: ['Which letter is B?'],
-    options: [['D', 'C', 'A', 'B']],
-    answer: ['B']
-  },
-  question3: {
-    questions: ['Which letter is C?'],
-    options: [['B', 'C', 'D', 'A']],
-    answer: ['C']
-  }
+  title: 'QUESTIONNAIRE',
+  questions: [
+    {
+      question: 'Which letter is A?',
+      options: ['A', 'B', 'C', 'D'],
+      answer: 'A'
+    },
+    {
+      question: 'Which letter is B?',
+      options: ['D', 'C', 'A', 'B'],
+      answer: 'B'
+    },
+    {
+      question: 'Which letter is C?',
+      options: ['B', 'C', 'D', 'A'],
+      answer: 'C'
+    }
+  ]
 };
 
 /*****************************************************

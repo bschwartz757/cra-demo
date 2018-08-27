@@ -7,8 +7,6 @@ import TableBody from './TableBody';
 import TableHead from './TableHead';
 
 const TableComponent = props => {
-  // console.log('TableComponent props: ', props);
-
   return (
     <CardComponent title={props.title}>
       <Table responsive hover>
