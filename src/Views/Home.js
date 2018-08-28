@@ -1,10 +1,8 @@
 import React from 'react';
-import { Row, Col, Button } from 'reactstrap';
-import { push } from 'connected-react-router';
-import { connect } from 'react-redux';
+import { Row, Col } from 'reactstrap';
 import Photo from '../assets/images/Me-In-Sicily-bw.jpg';
 
-const HomePage = props => (
+const HomePage = () => (
   <section>
     <Row>
       <Col xs="12">
@@ -29,23 +27,6 @@ const HomePage = props => (
       </Col>
     </Row>
   </section>
-
-  // <div>
-  //   <h1>Home</h1>
-  //   <p>
-  //     <button onClick={() => props.changePage()}>
-  //       Go to about page via redux
-  //     </button>
-  //   </p>
-  // </div>
 );
 
-const mapDispatchToProps = dispatch => {
-  return {
-    changePage: () => dispatch(push('/data'))
-  };
-};
-export default connect(
-  null,
-  mapDispatchToProps
-)(HomePage);
+export default HomePage;

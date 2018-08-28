@@ -2,7 +2,11 @@ import { combineReducers } from 'redux';
 import * as Actions from '../Actions';
 
 const initialState = {
-  tests: []
+  tests: {
+    A: '',
+    B: '',
+    C: ''
+  }
 };
 
 const updateTestAnswer = (state = initialState, action) => {
