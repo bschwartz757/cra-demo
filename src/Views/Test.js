@@ -8,9 +8,8 @@ import CardComponent from '../Components/Card';
 import FormComponent from '../Components/QuizForm';
 import AlertComponent from '../Components/Alert';
 
-const TestPage = () => {
+const TestPage = props => {
   let { title, ...rest } = test1;
-
   return (
     <React.Fragment>
       <section>
@@ -25,7 +24,7 @@ const TestPage = () => {
       <section>
         <Row>
           <Col xs="12">
-            <AlertComponent />
+            <AlertComponent {...props.tests} />
           </Col>
         </Row>
       </section>
@@ -39,18 +38,7 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    updateTestAnswer: value => {
-      dispatch({
-        type: 'UPDATE_TEST_ANSWER',
-        value: value
-      });
-    }
-  };
-};
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  null
 )(TestPage);

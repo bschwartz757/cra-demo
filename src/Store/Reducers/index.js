@@ -13,7 +13,7 @@ const updateTestAnswer = (state = initialState, action) => {
   if (action.type === 'UPDATE_TEST_ANSWER') {
     return {
       ...state,
-      tests: action.value
+      tests: { ...action.value }
     };
   }
   return state;

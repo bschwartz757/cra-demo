@@ -8,6 +8,9 @@ import ButtonComponent from '../Button';
 import InputComponent from './FormInput';
 
 class FormComponent extends Component {
+  // keep track of selected checkboxes as "local state." We can use this
+  // to update the global state (managed by Redux) on button click. That
+  // allows us to update the Alert component programmatically.
   state = {
     A: '',
     B: '',
@@ -23,9 +26,6 @@ class FormComponent extends Component {
   };
 
   render() {
-    console.log('state: ', this.state);
-
-    // const FormComponent = props => {
     const cards = this.props.questions.map((prop, index) => {
       return (
         <CardComponent columns={'col-4'} key={index} title={prop.question}>
@@ -46,13 +46,8 @@ class FormComponent extends Component {
             );
           })}
           <ButtonComponent
-            data={prop.answer}
             click={event => {
-              this.props.updateTestAnswer(
-                Object.assign({}, this.state, {
-                  buttonRef: event.target.dataset.quiz
-                })
-              );
+              this.props.updateTestAnswer(this.state);
             }}
           />
         </CardComponent>
@@ -64,7 +59,6 @@ class FormComponent extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log('state: ', state);
   return {
     tests: state.updateTestAnswer.tests
   };
@@ -73,9 +67,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     updateTestAnswer: obj => {
-      console.log('update: ', obj);
       dispatch({
-        type: 'UPDATE_REQUIRED_PARAMS',
+        type: 'UPDATE_TEST_ANSWER',
         value: obj
       });
     }
