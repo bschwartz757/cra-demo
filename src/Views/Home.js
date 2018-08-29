@@ -8,10 +8,10 @@ const HomePage = () => (
       <Col xs="12">
         <h1>Hello! Welcome to the homepage</h1>
         <article className="d-flex">
-          <aside className="col-4">
+          <aside className="col-12 col-md-4">
             <img src={Photo} className="img-fluid" alt="Author in Sicily" />
           </aside>
-          <div className="col-8">
+          <div className="col-12 col-md-8">
             <p>
               This is just a little bit of an introduction. The "real" me is a
               lot more interesting - maybe you'll see me around.

@@ -7,52 +7,52 @@ const data1 = {
   columns: ['month', 'year'],
   data: [
     {
-      month: '1',
-      score: '50'
+      month: 1,
+      score: 50
     },
     {
-      month: '2',
-      score: '53'
+      month: 2,
+      score: 53
     },
     {
-      month: '3',
-      score: '63'
+      month: 3,
+      score: 63
     },
     {
-      month: '4',
-      score: '63'
+      month: 4,
+      score: 63
     },
     {
-      month: '5',
-      score: '72'
+      month: 5,
+      score: 72
     },
     {
-      month: '6',
-      score: '74'
+      month: 6,
+      score: 74
     },
     {
-      month: '7',
-      score: '75'
+      month: 7,
+      score: 75
     },
     {
-      month: '8',
-      score: '81'
+      month: 8,
+      score: 81
     },
     {
-      month: '9',
-      score: '80'
+      month: 9,
+      score: 80
     },
     {
-      month: '10',
-      score: '95'
+      month: 10,
+      score: 95
     },
     {
-      month: '11',
-      score: '98'
+      month: 11,
+      score: 98
     },
     {
-      month: '12',
-      score: '93'
+      month: 12,
+      score: 93
     }
   ]
 };

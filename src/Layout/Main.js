@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 
 import { Container, Col } from 'reactstrap';
@@ -8,22 +8,20 @@ import AboutPage from '../Views/About';
 import DataPage from '../Views/Data';
 import TestPage from '../Views/Test';
 
-const Main = () => {
-  return (
-    <Container
-      className="clearfix"
-      style={{
-        marginTop: '5rem'
-      }}
-    >
-      <Col xs="12">
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/about" component={AboutPage} />
-        <Route exact path="/data" component={DataPage} />
-        <Route exact path="/test" component={TestPage} />
-      </Col>
-    </Container>
-  );
-};
+const Main = () => (
+  <Container
+    className="clearfix"
+    style={{
+      marginTop: '5rem'
+    }}
+  >
+    <Col xs="12">
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/about" component={AboutPage} />
+      <Route exact path="/data" component={DataPage} />
+      <Route exact path="/test" component={TestPage} />
+    </Col>
+  </Container>
+);
 
 export default Main;
