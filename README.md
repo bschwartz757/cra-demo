@@ -1,3 +1,19 @@
+# ClinIntell Take-Home Project
+
+This project was scaffolded with Create-React-App, you'll find more information on it below. If you wish to run the app in development mode, simply install the project dependencies with (from the project root) `npm i`, followed by `npm start`. This is also the easiest and recommended way to review the app, but make sure you have a recent version of NodeJS installed (the project was created using v8.11.3 and npm v6.2.) 
+
+`npm start` executes a react-scripts command that starts a lightweight NodeJS Express server running on localhost:3000, launches a browser window on that URL, and serves the client bundle. As you make code changes, the browser window will automatically refresh thanks to a Webpack feature called hot module replacement. Create-react-app takes care of wiring up and configuring all the Webpack dependencies to make this happen, so you don't need to worry about configuration but still get a fast and friendly development experience.
+
+In addition to the modules & utilities bundled by create-react-app/react scripts, this project integrates [Redux](https://redux.js.org/) for state management, as well as [React-router](https://github.com/ReactTraining/react-router) for client-side routing. Thanks to integration between Redux and React-Router via [Connected-React-Router](https://github.com/supasate/connected-react-router), as you navigate between pages your history is automatically stored in global state, so you can use the browser's forward/back buttons to seamlessly navigate between pages without a page refresh.
+
+For the UI layer, this project uses [Reactstrap](https://reactstrap.github.io/), which is a jQuery-less component library wrapping Bootstrap components. Contrary to the React-Bootstrap library officially recommended by CRA, Reactstrap is fully compatible with Bootstrap 4.
+
+Additionally, this project includes syntax linting/code formatting via Eslint and Prettier. If used with GitHub, the `precommit` hook specified in the package.json's npm scripts object will automatically lint and format all changed files when a code change is committed.
+
+You will also find an optimized production build in the `./build` directory. This can be easily created using the `npm run build` command provided by the package.json. This bundle can be served up using any webserver that serves static assets, and includes everything needed to run the app; however, the app will not run if you simply attempt to launch the index.html in your browser.
+
+****
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
